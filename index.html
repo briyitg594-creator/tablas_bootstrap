@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Search - Guía Interactiva Completa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header class="encabezado py-4 mb-5 shadow-sm">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <div class="logo fs-4">
+                Boot<span>strap</span> Search
+            </div>
+            <nav class="nav gap-3">
+                <a class="nav-link" href="#inicio">Inicio</a>
+                <a class="nav-link" href="#tablas">Tablas</a>
+                <a class="nav-link" href="#clases">Clases</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mb-5" id="inicio">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                
+                <section class="buscador p-4 mb-5 shadow-sm">
+                    <div class="text-center mb-4">
+                        <h2 class="h3 fw-bold text-dark">
+                            <i class="bi bi-collection-fill text-primary me-2"></i>¿Qué es Bootstrap?
+                        </h2>
+                        <p class="text-secondary">
+                            Bootstrap es un framework que facilita el desarrollo de páginas web modernas, ordenadas y adaptables.
+                        </p>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="tarjeta p-3 h-100 text-center">
+                                <div class="fs-3 mb-2">⚡</div>
+                                <h5 class="fw-bold text-dark">Rápido</h5>
+                                <p class="small text-secondary mb-0">Permite desarrollar interfaces rápidamente.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="tarjeta p-3 h-100 text-center">
+                                <div class="fs-3 mb-2">📱</div>
+                                <h5 class="fw-bold text-dark">Responsive</h5>
+                                <p class="small text-secondary mb-0">Permite crear páginas adaptables.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="tarjeta p-3 h-100 text-center">
+                                <div class="fs-3 mb-2">🎨</div>
+                                <h5 class="fw-bold text-dark">Diseño</h5>
+                                <p class="small text-secondary mb-0">Incluye componentes y estilos prediseñados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tarjeta p-4 mb-4" id="tablas">
+                    <div class="text-success small mb-1">bootstrap-search.com › tablas › table</div>
+                    <h2 class="h3 text-primary mb-3">1. Tabla básica — table</h2>
+                    <p class="text-secondary mb-3">La clase <strong>table</strong> es la base para crear tablas con Bootstrap.</p>
+                    
+                    <div class="table-responsive mb-3">
+                        <table class="table mb-0">
+                            <thead>
+                                <tr><th>Nombre</th><th>Curso</th><th>Nota</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Ana</td><td>HTML</td><td>90</td></tr>
+                                <tr><td>Carlos</td><td>CSS</td><td>85</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button type="button" class="btn-bootstrap" data-bs-toggle="modal" data-bs-target="#modalTable">
+                        Ver información
+                    </button>
+                </section>
+
+                <section class="tarjeta p-4 mb-4">
+                    <div class="text-success small mb-1">bootstrap-search.com › tablas › table-striped</div>
+                    <h2 class="h3 text-primary mb-3">2. Filas alternadas — table-striped</h2>
+                    <p class="text-secondary mb-3">Agrega colores alternados entre las filas para mejorar la lectura.</p>
+                    
+                    <div class="table-responsive mb-3">
+                        <table class="table table-striped mb-0">
+                            <thead>
+                                <tr><th>Producto</th><th>Cantidad</th><th>Precio</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Laptop</td><td>5</td><td>Bs 4500</td></tr>
+                                <tr><td>Mouse</td><td>10</td><td>Bs 80</td></tr>
+                                <tr><td>Teclado</td><td>8</td><td>Bs 150</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button type="button" class="btn-bootstrap" data-bs-toggle="modal" data-bs-target="#modalStriped">
+                        Ver información
+                    </button>
+                </section>
+
+                <section class="tarjeta p-4 mb-4">
+                    <div class="text-success small mb-1">bootstrap-search.com › tablas › table-hover</div>
+                    <h2 class="h3 text-primary mb-3">3. Tabla interactiva — table-hover</h2>
+                    <p class="text-secondary mb-3">Añade un efecto visual al pasar el cursor sobre las filas.</p>
+                    
+                    <div class="table-responsive mb-3">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr><th>Estudiante</th><th>Materia</th><th>Calificación</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Briyit</td><td>Diseño Web</td><td>95</td></tr>
+                                <tr><td>Laura</td><td>Programación</td><td>90</td></tr>
+                                <tr><td>Pedro</td><td>Bootstrap</td><td>88</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button type="button" class="btn-bootstrap" data-bs-toggle="modal" data-bs-target="#modalHover">
+                        Ver información
+                    </button>
+                </section>
+
+                <section class="tarjeta p-4 mb-4">
+                    <div class="text-success small mb-1">bootstrap-search.com › tablas › table-bordered</div>
+                    <h2 class="h3 text-primary mb-3">4. Tabla con bordes — table-bordered</h2>
+                    <p class="text-secondary mb-3">Agrega bordes en todos los lados de la tabla y las celdas.</p>
+                    
+                    <div class="table-responsive mb-3">
+                        <table class="table table-bordered mb-0">
+                            <thead>
+                                <tr><th>Departamento</th><th>Capital</th><th>Región</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>La Paz</td><td>La Paz</td><td>Occidental</td></tr>
+                                <tr><td>Santa Cruz</td><td>Santa Cruz</td><td>Oriental</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button type="button" class="btn-bootstrap" data-bs-toggle="modal" data-bs-target="#modalBordered">
+                        Ver información
+                    </button>
+                </section>
+
+                <section class="tarjeta p-4 mb-4">
+                    <div class="text-success small mb-1">bootstrap-search.com › tablas › table-dark</div>
+                    <h2 class="h3 text-primary mb-3">5. Tabla oscura — table-dark</h2>
+                    <p class="text-secondary mb-3">Invierte los colores para obtener una interfaz de estilo oscuro.</p>
+                    
+                    <div class="table-responsive mb-3">
+                        <table class="table table-dark mb-0">
+                            <thead>
+                                <tr><th>Usuario</th><th>Rol</th><th>Estado</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Briyit</td><td>Admin</td><td>Activo</td></tr>
+                                <tr><td>María</td><td>Usuario</td><td>Activo</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button type="button" class="btn-bootstrap" data-bs-toggle="modal" data-bs-target="#modalDark">
+                        Ver información
+                    </button>
+                </section>
+
+                <section class="tarjeta p-4 mb-4" id="clases">
+                    <div class="text-success small mb-1">bootstrap-search.com › tablas › table-responsive</div>
+                    <h2 class="h3 text-primary mb-3">6. Tabla responsiva — table-responsive</h2>
+                    <p class="text-secondary mb-3">Permite desplazamiento horizontal automático en pantallas pequeñas.</p>
+                    
+                    <div class="table-responsive mb-3">
+                        <table class="table table-bordered mb-0">
+                            <thead>
+                                <tr><th>ID</th><th>Nombre</th><th>Correo</th><th>Ciudad</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td><td>Ana</td><td>ana@gmail.com</td><td>La Paz</td></tr>
+                                <tr><td>2</td><td>Pedro</td><td>pedro@gmail.com</td><td>Oruro</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button type="button" class="btn-bootstrap" data-bs-toggle="modal" data-bs-target="#modalResponsive">
+                        Ver información
+                    </button>
+                </section>
+
+                <section class="tarjeta p-4 mb-4">
+                    <div class="text-success small mb-1">bootstrap-search.com › tablas › combinaciones</div>
+                    <h2 class="h3 text-primary mb-3">7. Combinación de clases</h2>
+                    <p class="text-secondary mb-3">Las clases de Bootstrap pueden combinarse para obtener tablas más completas.</p>
+                    
+                    <div class="table-responsive mb-3">
+                        <table class="table table-striped table-hover table-bordered mb-0">
+                            <thead class="table-primary">
+                                <tr><th>Producto</th><th>Stock</th><th>Precio</th><th>Estado</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Laptop</td><td>15</td><td>Bs 4500</td><td>Disponible</td></tr>
+                                <tr><td>Monitor</td><td>8</td><td>Bs 1200</td><td>Disponible</td></tr>
+                                <tr><td>Teclado</td><td>0</td><td>Bs 150</td><td>Agotado</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <button type="button" class="btn btn-success fw-bold px-3 py-2" data-bs-toggle="modal" data-bs-target="#modalCombinacion">
+                        ⭐ Ver combinación
+                    </button>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white text-center py-4 border-top text-muted">
+        <div class="container">
+            <h5 class="text-dark">Bootstrap Search</h5>
+            <p class="mb-1">Aprende Bootstrap de una manera sencilla y visual.</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modalTable" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tabla básica — table</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="text-primary fw-bold">¿Qué es?</h6>
+                    <p class="text-secondary small">Es la clase base que da formato esencial a cualquier tabla HTML.</p>
+                    <h6 class="text-primary fw-bold">¿Para qué sirve?</h6>
+                    <p class="text-secondary small">Convierte una tabla tradicional sin estilo en una estructura moderna.</p>
+                    <h6 class="text-primary fw-bold">¿Cómo se utiliza?</h6>
+                    <div class="bg-dark text-light p-2 rounded">
+                        <pre class="mb-0 small text-info"><code>&lt;table class="table"&gt;...&lt;/table&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalStriped" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Filas alternadas — table-striped</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="text-primary fw-bold">¿Qué es?</h6>
+                    <p class="text-secondary small">Pinta las filas de forma intercalada (un tono más sutil en filas pares).</p>
+                    <h6 class="text-primary fw-bold">¿Para qué sirve?</h6>
+                    <p class="text-secondary small">Facilita el seguimiento visual de los datos en listas largas.</p>
+                    <h6 class="text-primary fw-bold">¿Cómo se utiliza?</h6>
+                    <div class="bg-dark text-light p-2 rounded">
+                        <pre class="mb-0 small text-info"><code>&lt;table class="table table-striped"&gt;...&lt;/table&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalHover" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tabla interactiva — table-hover</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="text-primary fw-bold">¿Qué es?</h6>
+                    <p class="text-secondary small">Efecto dinámico que cambia de color la fila al pasar el cursor.</p>
+                    <h6 class="text-primary fw-bold">¿Para qué sirve?</h6>
+                    <p class="text-secondary small">Ayuda a enfocarse de manera precisa en una fila concreta.</p>
+                    <h6 class="text-primary fw-bold">¿Cómo se utiliza?</h6>
+                    <div class="bg-dark text-light p-2 rounded">
+                        <pre class="mb-0 small text-info"><code>&lt;table class="table table-hover"&gt;...&lt;/table&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalBordered" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tabla con bordes — table-bordered</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="text-primary fw-bold">¿Qué es?</h6>
+                    <p class="text-secondary small">Añade bordes delimitadores a cada celda y al exterior.</p>
+                    <h6 class="text-primary fw-bold">¿Para qué sirve?</h6>
+                    <p class="text-secondary small">Ideal cuando se requiere separación estricta tipo cuadrícula.</p>
+                    <h6 class="text-primary fw-bold">¿Cómo se utiliza?</h6>
+                    <div class="bg-dark text-light p-2 rounded">
+                        <pre class="mb-0 small text-info"><code>&lt;table class="table table-bordered"&gt;...&lt;/table&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalDark" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tabla oscura — table-dark</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="text-primary fw-bold">¿Qué es?</h6>
+                    <p class="text-secondary small">Modifica los colores a una paleta oscura con textos claros.</p>
+                    <h6 class="text-primary fw-bold">¿Para qué sirve?</h6>
+                    <p class="text-secondary small">Para armonizar con sitios web modernos de modo oscuro.</p>
+                    <h6 class="text-primary fw-bold">¿Cómo se utiliza?</h6>
+                    <div class="bg-dark text-light p-2 rounded">
+                        <pre class="mb-0 small text-info"><code>&lt;table class="table table-dark"&gt;...&lt;/table&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalResponsive" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tabla responsiva — table-responsive</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="text-primary fw-bold">¿Qué es?</h6>
+                    <p class="text-secondary small">Contenedor adaptativo que genera desplazamiento horizontal.</p>
+                    <h6 class="text-primary fw-bold">¿Para qué sirve?</h6>
+                    <p class="text-secondary small">Evita que tablas anchas rompan el diseño en móviles.</p>
+                    <h6 class="text-primary fw-bold">¿Cómo se utiliza?</h6>
+                    <div class="bg-dark text-light p-2 rounded">
+                        <pre class="mb-0 small text-info"><code>&lt;div class="table-responsive"&gt;&lt;table class="table"&gt;...&lt;/table&gt;&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCombinacion" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">⭐ Combinación de Clases</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="text-success fw-bold">¿Qué es?</h6>
+                    <p class="text-secondary small">Uso simultáneo de múltiples clases de Bootstrap.</p>
+                    <h6 class="text-success fw-bold">¿Para qué sirve?</h6>
+                    <p class="text-secondary small">Aprovechar todos los beneficios estéticos en una sola tabla.</p>
+                    <h6 class="text-success fw-bold">¿Cómo se utiliza?</h6>
+                    <div class="bg-dark text-light p-2 rounded">
+                        <pre class="mb-0 small text-info"><code>&lt;table class="table table-striped table-hover table-bordered"&gt;...&lt;/table&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+/* ========================================== */
+/* PALETA DE COLORES Y ESTILOS (ESTILO1.CSS) */
+/* ========================================== */
+:root {
+    --fondo-principal: #121212;   /* Fondo general de la página (oscuro) */
+    --barra-superior: #1e1e1e;   /* Tarjetas y barras (oscuro) */
+    --azul-principal: #0d6efd;
+    --azul-oscuro: #084298;
+    --celeste: #6ea8fe;
+    --verde: #198754;
+    --amarillo: #ffc107;
+    --rojo: #dc3545;
+    --morado: #6f42c1;
+    --texto-principal: #f8f9fa;  
+    --texto-secundario: #adb5bd; 
+    --bordes: #2c2f33;           
+}
+
+body {
+    background-color: var(--fondo-principal);
+    color: var(--texto-principal);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Encabezado y Barra Superior */
+.encabezado {
+    background-color: var(--barra-superior);
+    border-bottom: 1px solid var(--bordes);
+}
+
+.logo {
+    color: var(--celeste);
+    font-weight: 700;
+}
+
+.logo span {
+    color:#aeb8ba;
+}
+
+header nav a {
+    color:#87196a;
+    font-weight: 500;
+    transition: all 0.25s ease-in-out;
+}
+
+header nav a:hover {
+    color: var(--celeste) !important;
+}
+
+/* Buscador o secciones destacadas */
+.buscador {
+    background-color: var(--barra-superior);
+    border: 2px solid var(--morado);
+    border-radius: 0.5rem;
+}
+
+/* Tarjetas (Cards) */
+.tarjeta {
+    background-color: var(--barra-superior);
+    border: 1px solid var(--bordes);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(81, 66, 147, 0.4);
+    transition: all 0.25s ease-in-out;
+}
+
+.tarjeta:hover {
+    box-shadow: 0 0.5rem 1rem rgba(39, 131, 41, 0.6) !important;
+    border-color: var(--celeste);
+}
+
+/* ========================================== */
+/* TABLAS CON COLORES CLAROS Y SOPORTE AVANZADO */
+/* ========================================== */
+.table {
+    --bs-table-bg: #ffffff;          /* Fondo interno blanco para las tablas */
+    --bs-table-color: #212529;       /* Texto oscuro y legible */
+    --bs-table-border-color: #dee2e6;/* Bordes suaves claros */
+    color: #212529 !important;
+    background-color: var(--bs-table-bg) !important;
+    border-radius: 0.375rem;
+    margin-bottom: 0;
+}
+
+.table th, .table td {
+    background-color: transparent !important;
+    color: #343533 !important;
+    border-color: #dee2e6 !important;
+    padding: 0.75rem;
+}
+
+.table thead th {
+    background-color: #4378ac !important; /* Encabezado gris claro elegante */
+    color: #d7dbe0 !important;           /* Texto azul destacado en el encabezado */
+    border-bottom: 2px solid #ced4da;
+}
+
+/* Filas alternadas (table-striped) en colores claros */
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: #f8f9fa !important;
+    color: #2065ab !important;
+}
+
+/* Efecto hover en tablas (table-hover) en colores claros */
+.table-hover > tbody > tr:hover > * {
+    background-color: #e2e6ea !important;
+    color: #052c65 !important;
+}
+
+/* Soporte para filas y celdas activas (.table-active) */
+.table-active, .table > tbody > tr.table-active > *, .table > tbody > tr > td.table-active {
+    background-color: rgba(13, 110, 253, 0.12) !important;
+    color: #052c65 !important;
+}
+
+/* Soporte especial para tablas anidadas dentro de un <td> con colspan */
+.table td > .table {
+    margin: -0.75rem; 
+    width: calc(100% + 1.5rem);
+    background-color: #fdfdfe !important;
+}
+
+/* Contenedor responsivo estricto */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 0.375rem;
+}
+
+/* Excepción para la tabla oscura */
+.table-dark {
+    --bs-table-bg: #212529 !important;
+    --bs-table-color: #f8f9fa !important;
+    color: #f8f9fa !important;
+}
+.table-dark th, .table-dark td {
+    color: #f8f9fa !important;
+    background-color: #212529 !important;
+}
+.table-dark thead th {
+    background-color: #1a1d20 !important;
+    color: #6ea8fe !important;
+}
+
+/* Botones personalizados */
+.btn-bootstrap {
+    background-color: var(--azul-principal);
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    font-weight: 500;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-bootstrap:hover {
+    background-color: var(--azul-oscuro);
+    color: white;
+}
+
+/* Clases de apoyo adicionales */
+.text-secundario { color: var(--texto-secundario) !important; }
+.text-morado { color: var(--morado) !important; }
+.bg-morado { background-color: var(--morado) !important; color: white; }
+.text-celeste { color: var(--celeste) !important; }
+.text-verde { color: var(--verde) !important; }
+.text-amarillo { color: var(--amarillo) !important; }
+.text-rojo { color: var(--rojo) !important; }
+
+/* Ventanas emergentes (Modales) en Modo Oscuro */
+.modal-content {
+    background-color: var(--barra-superior);
+    color: var(--texto-principal);
+    border-radius: 0.5rem;
+    border: 1px solid var(--bordes);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.8);
+}
+
+.modal-header {
+    background-color: var(--azul-oscuro);
+    color: white;
+    border-bottom: 1px solid var(--bordes);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.modal-body pre {
+    background-color: #000000 !important;
+    border-radius: 0.375rem;
+    padding: 0.75rem;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
